@@ -1,0 +1,95 @@
+body{
+    margin: 0%;
+    padding: 0;
+    background: #eee;
+    max-height: 100vh;
+    overflow: hidden;
+}
+.mycanvas{
+    background: #eee;
+    position: absolute;
+    top: calc(0% - 50px);
+    left: 0;
+    right: 0;
+    bottom: 0%;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+}
+.body{
+    background: #fdfdfd;
+    height: 300px;
+    width: 150px;
+    border-radius: 150px 150px 32px 32px;
+    position: absolute;
+    margin: auto;
+    left: 0%;
+    right: 0%;
+    top: 28px;
+    z-index: 1;
+}
+.window{
+    height: 80px;
+    width: 80px;
+    border: 9px solid grey;
+    border-radius: 50%;
+    background: #b71432;
+    position: absolute;
+    margin: auto;
+    left: 0%;
+    right: 0%;
+    top: 85px;
+    z-index: 1;
+}
+.fins{
+    position: absolute;
+    background: #b71432;
+    height: 100px;
+    width: 300px;
+    border-radius: 200px 200px 25px 25px;
+    z-index: 0;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+    bottom:180px;
+}
+.smoke{
+    background: #fdfdfd;
+    position: absolute;
+    border-radius: 50%;
+}
+.smoke1{
+    height: 250px;
+    width: 250px;
+    bottom: -100px;
+    left: 115px;
+    z-index: 1;
+    animation: animate2 1s ease-in-out alternate infinite;
+}
+.smoke2{
+    background: #f7f4f4;
+    height: 150px;
+    width: 150px;
+    bottom: -100px;
+    left: 35px;
+    animation: animate 1.5s ease-in-out alternate infinite;
+}
+.smoke3{
+    background: #f7f4f4;
+    height: 180px;
+    width: 180px;
+    bottom: -100px;
+    left: 255px;
+    animation: animate 2s ease-in-out alternate infinite;
+}
+@keyframes animate{
+    50%, 100%{
+        background: #eee;
+    }
+}
+
+@keyframes animate2{
+    50%, 100%{
+        opacity: 0.4;
+    }
+}
